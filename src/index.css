@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Sora:wght@300;600;700&family=Work+Sans:wght@300;400;500;600;700&display=swap');
+
+
+body {
+  max-width: 1440px;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.long-img {
+  width: full;
+  height: 100%;
+  grid-area: 1/2/3/3;
+}
+
+@layer components {
+  .number {
+    @apply bg-[#120B48] w-[67px] h-[67px] text-white text-3xl rounded-full font-bold grid place-items-center font-inter
+  }
+  .input {
+    @apply w-full font-work rounded-lg bg-[#E7E7ED] text-[#434343] py-3
+  }
+  .authBtn {
+    @apply border-[#141414] border-[1px] w-full h-12 rounded-xl flex justify-center items-center gap-4 text-[#141414] font-semibold font-inter
+  }
+  .record {
+    @apply w-[550px] border-[7px] border-[#b3b2b2] h-24 text-white bg-black flex justify-center items-center gap-5 rounded-[50px] py-10 fixed left-20 bottom-5
+  }
+}
